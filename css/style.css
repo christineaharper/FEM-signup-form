@@ -4,9 +4,10 @@
   --color-primary: rgba(255, 121, 121, 1);
   --color-secondary: rgba(56, 204, 139, 1);
   --color-accent: rgba(94, 84, 164, 1);
+  --color-accent-light: rgba(185, 182, 211, 1);
 
   --color-dark: rgba(61, 59, 72, 1);
-  --color-light: rgba(185, 182, 211, 1);
+  --color-light: rgba(222, 222, 222, 1);
   --color-white: rgba(255, 255, 255, 1);
 }
 
@@ -26,16 +27,16 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: var(--color-white);
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 /* typography */
 
 h1 {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   font-weight: 700;
-  letter-spacing: 0.29px;
+  letter-spacing: 0.018rem;
   margin-bottom: 1rem;
 }
 
@@ -47,7 +48,7 @@ h1 {
 
 .container--info,
 .container--form {
-  max-width: 327px;
+  width: 20.438rem;
 }
 
 /* main */
@@ -55,14 +56,21 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+  margin: 0 auto;
   gap: 4rem;
   min-height: 100vh;
   background-color: var(--color-primary);
   background-image: url("../images/bg-intro-mobile.png");
   padding: 1.5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 90em) {
+  main {
+    /* flex-direction: row; */
+  }
 }
 
 .banner {
@@ -90,21 +98,33 @@ form {
   border-radius: 10px;
   background-color: var(--color-white);
   padding: 24px;
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.1469);
+}
+
+form > * {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
 }
 
 form input {
-  display: block;
-  width: 100%;
   padding: 15px 20px;
   margin-bottom: 1rem;
+  border: 1px solid var(--color-light);
+}
+
+input::placeholder {
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
 }
 
 /* button */
 
 button {
-  display: block;
-  width: 100%;
   padding: 15px 45px;
+  margin-bottom: 0.5rem;
 }
 
 small {
