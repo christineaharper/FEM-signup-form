@@ -1,0 +1,39 @@
+/* variables */
+
+:root {
+  --color-primary: rgba(255, 121, 121, 1);
+  --color-secondary: rgba(56, 204, 139, 1);
+  --color-accent: rgba(94, 84, 164, 1);
+
+  --color-dark: rgba(61, 59, 72, 1);
+  --color-light: rgba(185, 182, 211, 1);
+  --color-white: rgba(255, 255, 255, 1);
+}
+
+/* global */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
