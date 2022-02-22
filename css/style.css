@@ -58,7 +58,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--color-primary);
   background-image: url("../images/bg-intro-mobile.png");
   padding: 1.5rem;
@@ -82,6 +82,34 @@ main {
 .banner-copy span {
   font-size: 14px;
   font-weight: 400;
+}
+
+/* form */
+
+form {
+  border-radius: 10px;
+  background-color: var(--color-white);
+  padding: 24px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+}
+
+/* button */
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px 45px;
+}
+
+small {
+  color: var(--color-light);
+  display: block;
 }
 
 /* footer */
