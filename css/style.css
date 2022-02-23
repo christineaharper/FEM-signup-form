@@ -110,7 +110,7 @@ form {
   box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.1469);
 }
 
-form > * {
+form .input-field {
   display: block;
   width: 100%;
   border-radius: 0.313rem;
@@ -118,8 +118,8 @@ form > * {
 }
 
 #signup-form input {
+  width: 100%;
   padding: 0.938rem 1.25rem;
-  margin-bottom: 1rem;
   border: 0.063rem solid var(--color-light);
 }
 
@@ -137,6 +137,22 @@ input:focus {
 
 input:focus::placeholder {
   opacity: 1;
+}
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+/* form validation cues */
+
+small.error-msg {
+  display: block;
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16.5px;
+  font-style: italic;
+  text-align: right;
 }
 
 /* button */
@@ -160,7 +176,7 @@ button:hover {
   cursor: pointer;
 }
 
-small {
+small.terms {
   display: block;
   color: var(--color-accent-light);
   font-size: 0.688rem;
@@ -169,12 +185,12 @@ small {
   padding: 1rem;
 }
 
-small a {
+small.terms a {
   color: var(--color-primary);
   font-weight: 700;
 }
 
-small a:hover {
+small.terms a:hover {
   color: rgba(255, 121, 121, 0.7);
 }
 
@@ -225,11 +241,11 @@ small a:hover {
     padding: 2.5rem;
   }
 
-  form input {
+  .input-field {
     margin-bottom: 1.25rem;
   }
 
-  small {
+  small.terms {
     line-height: 1.625rem;
   }
 }
