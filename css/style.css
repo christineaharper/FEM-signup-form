@@ -193,6 +193,10 @@ small a:hover {
     text-align: left;
   }
 
+  main {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+
   h1 {
     font-size: 50px;
     line-height: 55px;
