@@ -132,11 +132,11 @@ form .input-container {
   content: "!";
   color: var(--color-white);
   position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  font-size: 13px;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.813rem;
   border-radius: 50%;
   background-color: var(--color-primary);
 }
