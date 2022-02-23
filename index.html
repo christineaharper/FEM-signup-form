@@ -32,13 +32,39 @@
                 <div class="banner">
                     <p class="banner-copy">Try it free 7 days <span>then $20/mo. thereafter</span></p>
                 </div>
+
                 <form action="" id="signup-form">
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-                    <input type="email" name="email" id="email" placeholder="Email Address">
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <button>Claim your free trial</button>
-                    <small> By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small>
+
+                    <div class="input-field">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        <small class="error-msg">First Name cannot be empty</small>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <small class="error-msg">Last Name cannot be empty</small>
+
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <small class="error-msg">Looks like this is not an email</small>
+
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <small class="error-msg">Password cannot be empty</small>
+
+                    </div>
+
+
+                    <button id="submit-btn">Claim your free trial</button>
+
+
+
+                    <small class="terms"> By clicking the button, you are agreeing to our <a href="#">Terms and
+                            Services</a></small>
                 </form>
             </div>
         </div>
