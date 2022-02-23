@@ -130,7 +130,6 @@ form .input-container {
 
 .input-container::after {
   content: "!";
-  color: var(--color-white);
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
@@ -138,10 +137,12 @@ form .input-container {
   height: 1.5rem;
   font-size: 0.813rem;
   border-radius: 50%;
+  color: var(--color-white);
   background-color: var(--color-primary);
+  visibility: hidden;
 }
 
-input::placeholder {
+.input-field::placeholder {
   color: var(--color-dark);
   opacity: 0.75;
   font-size: 0.875rem;
@@ -149,15 +150,13 @@ input::placeholder {
   letter-spacing: 0.016rem;
 }
 
-input:focus {
+.input-field:focus {
   outline: 1px solid var(--color-accent);
 }
 
-input:focus::placeholder {
+.input-field:focus::placeholder {
   opacity: 1;
 }
-
-/* form validation cues */
 
 small.error-msg {
   display: block;
@@ -167,6 +166,7 @@ small.error-msg {
   line-height: 16.5px;
   font-style: italic;
   text-align: right;
+  visibility: hidden;
 }
 
 /* button */
