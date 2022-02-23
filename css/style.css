@@ -40,6 +40,10 @@ h1 {
   margin-bottom: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .info-copy {
   font-weight: 500;
 }
@@ -105,6 +109,7 @@ form > * {
   display: block;
   width: 100%;
   border-radius: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
 form input {
@@ -123,13 +128,30 @@ input::placeholder {
 /* button */
 
 button {
-  padding: 15px 45px;
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 15px 40px;
   margin-bottom: 0.5rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 small {
-  color: var(--color-light);
   display: block;
+  color: var(--color-light);
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+small a {
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 /* footer */
