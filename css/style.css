@@ -50,31 +50,32 @@ a {
 
 /* layout  */
 
-.container--info,
+.container {
+  min-height: 100vh;
+  max-width: 69.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.container--info {
+  max-width: 525px;
+}
+
 .container--form {
-  width: 20.438rem;
+  max-width: 540px;
 }
 
 /* main */
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  margin: 0 auto;
-  gap: 4rem;
-  min-height: 100vh;
   background-color: var(--color-primary);
   background-image: url("../images/bg-intro-mobile.png");
   padding: 1.5rem;
   text-align: center;
-}
-
-@media screen and (min-width: 90em) {
-  main {
-    /* flex-direction: row; */
-  }
 }
 
 .banner {
@@ -163,4 +164,29 @@ small a {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* media query - desktop (1440px) */
+
+@media screen and (min-width: 90em) {
+  .container {
+    flex-direction: row;
+    gap: 2.813rem;
+  }
+
+  .container--info {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+    margin-bottom: 11px;
+  }
+
+  .info-copy {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
 }
