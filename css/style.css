@@ -189,4 +189,20 @@ small a {
     font-size: 1rem;
     line-height: 1.625rem;
   }
+
+  .banner {
+    padding: 17px 111px;
+  }
+
+  form {
+    padding: 40px;
+  }
+
+  form input {
+    margin-bottom: 20px;
+  }
+
+  small {
+    line-height: 26px;
+  }
 }
