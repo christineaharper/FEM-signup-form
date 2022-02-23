@@ -49,10 +49,6 @@ button {
   transition: all 0.3s;
 }
 
-.info-copy {
-  font-weight: 500;
-}
-
 /* layout  */
 
 .container {
@@ -67,11 +63,11 @@ button {
 }
 
 .container--info {
-  max-width: 525px;
+  max-width: 32.813rem;
 }
 
 .container--form {
-  max-width: 540px;
+  max-width: 33.75rem;
 }
 
 /* main */
@@ -92,20 +88,23 @@ main {
 }
 
 .banner-copy {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.27px;
+  font-size: 0.938rem;
+  font-weight: 700;
+  letter-spacing: 0.017rem;
 }
 
 .banner-copy span {
-  font-size: 14px;
   font-weight: 400;
+}
+
+.info-copy {
+  font-weight: 500;
 }
 
 /* form */
 
 form {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: var(--color-white);
   padding: 24px;
   box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.1469);
@@ -114,22 +113,22 @@ form {
 form > * {
   display: block;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   font-family: "Poppins", sans-serif;
 }
 
 #signup-form input {
-  padding: 15px 20px;
+  padding: 0.938rem 1.25rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--color-light);
+  border: 0.063rem solid var(--color-light);
 }
 
 input::placeholder {
   color: var(--color-dark);
   opacity: 0.75;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.016rem;
 }
 
 input:focus {
@@ -145,13 +144,13 @@ input:focus::placeholder {
 button {
   background-color: var(--color-secondary);
   border: none;
-  padding: 15px 40px;
+  padding: 0.938rem 2.5rem;
   margin-bottom: 0.5rem;
-  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.0989);
+  box-shadow: 0 0.25rem 0 0 rgba(0, 0, 0, 0.0989);
   color: var(--color-white);
   text-transform: uppercase;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 0.938rem;
+  line-height: 1.625rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -164,8 +163,8 @@ button:hover {
 small {
   display: block;
   color: var(--color-light);
-  font-size: 11px;
-  line-height: 21px;
+  font-size: 0.688rem;
+  line-height: 1.313rem;
   font-weight: 500;
   padding: 1rem;
 }
@@ -182,7 +181,7 @@ small a:hover {
 /* footer */
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
 }
 
@@ -207,10 +206,10 @@ small a:hover {
   }
 
   h1 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 3.125rem;
+    line-height: 3.438rem;
     letter-spacing: -0.52px;
-    margin-bottom: 11px;
+    margin-bottom: 0.688rem;
   }
 
   .info-copy {
@@ -219,18 +218,18 @@ small a:hover {
   }
 
   .banner {
-    padding: 17px 111px;
+    padding: 1.063rem 6.938rem;
   }
 
   form {
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   form input {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   small {
-    line-height: 26px;
+    line-height: 1.625rem;
   }
 }
