@@ -52,7 +52,7 @@ button {
 /* layout  */
 
 .container {
-  min-height: 100vh;
+  height: 100%;
   max-width: 69.375rem;
   display: flex;
   flex-direction: column;
@@ -73,6 +73,7 @@ button {
 /* main */
 
 main {
+  height: 100vh;
   background-color: var(--color-primary);
   background-image: url("../images/bg-intro-mobile.png");
   padding: 5.5rem 1.5rem 4.25rem;
@@ -146,8 +147,21 @@ form .input-container {
 
 /* validation styles */
 
-.input-container::after {
+.input-container.error::after {
   content: "!";
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.813rem;
+  border-radius: 50%;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.input-container.success::after {
+  content: "\2713";
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
@@ -156,8 +170,15 @@ form .input-container {
   font-size: 0.813rem;
   border-radius: 50%;
   color: var(--color-white);
-  background-color: var(--color-primary);
-  visibility: hidden;
+  background-color: var(--color-secondary);
+}
+
+.input-field.error {
+  outline: 1px solid var(--color-primary);
+}
+
+.input-field.success {
+  outline: 1px solid var(--color-secondary);
 }
 
 small.error-msg {
@@ -169,6 +190,10 @@ small.error-msg {
   font-style: italic;
   text-align: right;
   visibility: hidden;
+}
+
+small.error-msg.error {
+  visibility: visible;
 }
 
 /* button */
