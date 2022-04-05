@@ -1,10 +1,11 @@
 
 const form = document.getElementById('signup-form');
+const formContainer = document.querySelector('.container--form');
+const infoContainer = document.querySelector('.container--info');
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-// const submitBtn = document.getElementById('submit-btn');
 
 
 form.addEventListener('submit', (e) => {
@@ -47,6 +48,8 @@ function checkInput () {
         } else {
             setSuccess(password);
         }
+
+        // submit();
 }
 
 function checkEmail (email) {
@@ -59,7 +62,11 @@ function setError (input) {
     const container = input.parentElement;
     const errMsg = container.querySelector('.error-msg')
     const inputField = container.querySelector('.input-field');
-    
+
+    // clear potential previous success 
+    container.classList.remove('success');
+    inputField.classList.remove('success');
+
     // add error class to parent container
     container.classList.add('error');
     // add error class/message to small
@@ -71,10 +78,26 @@ function setError (input) {
 
 function setSuccess (input) {
     const container = input.parentElement;
+    const errMsg = container.querySelector('.error-msg')
     const inputField = container.querySelector('.input-field');
+
+    // clear potential previous error 
+    container.classList.remove('error');
+    errMsg.classList.remove('error');
+    inputField.classList.remove('error');
 
     // add success class to parent container
     container.classList.add('success');
     // add success border to input field
     inputField.classList.add('success');
+}
+
+function submit () {
+    if(firstName.classList.contains('success') &&
+        lastName.classList.contains('success') &&
+        email.classList.contains('success') && 
+        password.classList.contains('success')){
+            formContainer.style.display = "none";
+            
+        }
 }

@@ -66,9 +66,9 @@ button {
   max-width: 32.813rem;
 }
 
-.container--form {
+/* .container--form {
   max-width: 33.75rem;
-}
+} */
 
 /* main */
 
@@ -121,6 +121,12 @@ form .input-container {
 .input-container {
   margin-bottom: 1rem;
   position: relative;
+}
+
+main label.label {
+  display: block;
+  color: hotpink;
+  text-align: left;
 }
 
 .input-field {
